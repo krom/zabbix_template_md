@@ -24,7 +24,6 @@ INSTALLATION
 ------------
 * Agent
   * Copy __userparameter_md.conf__ to __/etc/zabbix/zabbix_agentd.d/userparameter_md.conf__ 
-  * Copy __zabbix_md_discover.sh__ to __/usr/bin/zabbix_md_discover.sh__
   * Restart zabbix_agent
 * Server
   * Import template __template_md.xml__ file
