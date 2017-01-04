@@ -210,7 +210,7 @@
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template MD Soft RAID:md.degraded[{#MDNAME}].last()}&gt;0</expression>
-                            <name>MD {#MDNAME} is degraded  on {HOST.NAME}</name>
+                            <name>MD {#MDNAME} is degraded on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
@@ -219,8 +219,8 @@
                             <dependencies/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Template MD Soft RAID:md.raid_disks[{#MDNAME}].change()}&gt;0</expression>
-                            <name>MD {#MDNAME} number of disks changed  on {HOST.NAME}</name>
+                            <expression>{Template MD Soft RAID:md.raid_disks[{#MDNAME}].diff()}&gt;0</expression>
+                            <name>MD {#MDNAME} number of disks changed on {HOST.NAME}</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
