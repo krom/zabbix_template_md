@@ -18,12 +18,12 @@ FEATURES
 REQUIREMENTS
 ------------
 * Zabbix server version 3.0
-* SYSFS at agents`s server, __/sys/block/md*__ available
+* SYSFS at agents's server, __/sys/block/md*__ available
 
 INSTALLATION
 ------------
 * Agent
-  * Copy __userparameter_md.conf__ to __/etc/zabbix/zabbix_agentd.d/userparameter_md.conf__ 
+  * Copy __userparameter_md.conf__ to __/etc/zabbix/zabbix_agentd.d/userparameter_md.conf__
   * Restart zabbix_agent
 * Server
   * Import template __template_md.xml__ file
@@ -36,4 +36,4 @@ LICENSE
 -------
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 
-@see __LICENSE__
+See [LICENSE](LICENSE)
