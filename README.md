@@ -41,8 +41,15 @@ ITEMS
 
 * **md.discover** - LLD data (MD RAIDs and disks)
 * **md.degraded[*]** - number of degraded disks for specific RAID
-* **md.sync_action[*]** - current sysnc status for specific RAID
-* **md.raid_disks[*]** - number all disks for specific RAID
+* **md.sync_action[*]** - current sync status for specific RAID
+* **md.raid_disks[*]** - number of all disks for specific RAID
+
+How to add new Item
+===================
+
+1. Add new **UserParameter** to **/etc/zabbix/zabbix_agentd.d/userparameter_md.conf**
+  * For example `UserParameter=md.sync_speed[*],cat /sys/block/$1/md/sync_speed`
+2. Create new Item by [instruction](https://www.zabbix.com/documentation/3.4/manual/config/items/item)
 
 AUTHOR
 ------
