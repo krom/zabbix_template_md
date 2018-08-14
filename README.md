@@ -2,7 +2,9 @@
 
 Using _sysfs_ for monitoring of Linux Soft RAID aka MD
 
-Tested on Zabbix Version 3.0
+>Tested on Zabbix Version 3.0
+
+>Automatically converted for Zabbix v2.0 and v2.4
 
 See at [share.zabbix.com](https://share.zabbix.com/operating-systems/linux/template-md-raid)
 
@@ -16,7 +18,6 @@ See at [share.zabbix.com](https://share.zabbix.com/operating-systems/linux/templ
 
 ## REQUIREMENTS
 
-* Zabbix server version 3.0
 * SYSFS at agents's server, __/sys/block/md*__ available
 
 ## INSTALLATION
@@ -27,12 +28,12 @@ See at [share.zabbix.com](https://share.zabbix.com/operating-systems/linux/templ
   * Restart zabbix_agent
     * UBUNTU/DEBIAN: `sudo service zabbix-agent restart`
 * Server
-  * Import template __template_md.xml__ file via web admin
-    * Save the XML template file to a convenient location
+  * Import template __template_md_x.x.xml__ file via web admin (**x.x** this is your version of Zabbix)
+    * Save the XML template file to a convenient location (or [this](https://github.com/krom/zabbix_template_md/archive/master.zip) archive)
     * Open the Zabbix console
     * Navigate to __Configuration__ > __Templates__
     * Click the __Import__ button
-    * Select the downloaded __template_md.xml__ file
+    * Select the downloaded __template_md_x.x.xml__ file
     * Click __Import__
 
 ## ITEMS
