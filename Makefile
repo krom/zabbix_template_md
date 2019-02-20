@@ -5,7 +5,8 @@ LATEST = template_md_3.0.xml
 all: \
 	dist/zabbix_template_md_2.0.zip \
 	dist/zabbix_template_md_2.4.zip \
-	dist/zabbix_template_md_3.0.zip
+	dist/zabbix_template_md_3.0.zip \
+	dist/zabbix_template_md_4.0.zip
 
 template_md_2.0.xml: $(LATEST)
 	zabbix-template-converter \
@@ -28,6 +29,9 @@ dist/zabbix_template_md_2.4.zip: template_md_2.4.xml dist
 
 dist/zabbix_template_md_3.0.zip: dist
 	zip -r dist/zabbix_template_md_3.0.zip LICENSE README.md template_md_3.0.xml userparameter_md.conf
+
+dist/zabbix_template_md_4.0.zip: dist
+	zip -r dist/zabbix_template_md_4.0.zip LICENSE README.md template_md_4.0.xml userparameter_md.conf
 
 clean:
 	rm -vfr \
