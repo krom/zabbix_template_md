@@ -239,6 +239,22 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
+                            <expression>{Template MD Soft RAID:md.sync_action[{#MDNAME}].str(check)}=1</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>MD {#MDNAME} in check mode on {HOST.NAME}</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>0</status>
+                            <priority>1</priority>
+                            <description/>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                        <trigger_prototype>
                             <expression>{Template MD Soft RAID:md.sync_action[{#MDNAME}].str(recover)}=1</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
